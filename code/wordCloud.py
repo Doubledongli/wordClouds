@@ -30,7 +30,7 @@ for word in word_split:
                 word_dict[item2] = 1
             else:
                 word_dict[item2] += 1
-with open(userDic,'w') as wf2:#此处的wordCnt.txt为统计词频后的文件存放位置，写好即可
+with open(wordCntpth,'w') as wf2:#此处的wordCnt.txt为统计词频后的文件存放位置，写好即可
     for key in word_dict:
         wf2.write(key + ' ' + str(word_dict[key]) + '\n')
 #设置生成词云的背景图片,此处可以随意选一张自己喜欢的图片的绝对路径
